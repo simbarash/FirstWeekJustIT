@@ -1,0 +1,132 @@
+/* ===============================
+
+THIS SHOPPING WEBSITE IS FOR TRAINING ONLY 
+
+=================================
+*/
+
+
+
+
+/*WEBSITE COLOUR THEME*/
+
+
+/*
+Main Colours:
+
+Primary colour - rgb(183, 154, 246); //purple for navigation links
+Secondary colour - rgb(53, 38, 80); //darker purple
+Third colour - rgb(200, 177, 250); //lighter purple
+*/
+
+
+		
+/* 
+=========== 
+HOME STYLES
+===========
+*/
+
+img, video {
+	
+	width: 100%;
+}
+
+body {
+	
+	font-family: serif;
+	font-size: 16px;
+	color: #444;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	
+}
+
+
+#home {
+	
+	position: relative;
+	background-image: url(../img/trainerHomePage.jpg);
+/*	height: auto; */
+	width: 100%;
+	height: 100vh;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+.logo {
+	
+	position: absolute;
+	top: 3px;
+	left: 10px;
+	width: 50px;
+	
+}
+
+.navC {
+	color: #fff;
+	width:  100%;
+	text-align: center;
+	background-color: #b79af6;
+	
+}
+
+.menu-items {
+	
+	display: inline;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	
+}
+
+nav li a {
+	color: #fff;
+	display: block;
+	text-align: right;
+	padding: 15px 10px 15px 0;
+}
+
+.cartIcon {
+	top: 15px;
+	position: absolute;
+	left: 50vw;
+	width: 20px;
+	z-index: 10;
+}
+
+.fa-shopping-cart {
+	color:  #352650;
+	font-size: 2em;
+}
+
+/* This is the code for the 3 line bar menu icon*/
+
+.navBtn {
+	font-size: 2.5em;
+	display: block;
+	cursor: pointer;
+	padding: 7px 3%;
+	text-align: center;
+	margin: 0 4vw 0 75vw;
+	width: 20%;
+	
+}
+
+
+.actionB {
+	position:absolute;
+	top: 65vh;
+	left: 5vw;
+	
+}
+
+.newCollectionB {
+	color: #fff;
+	border-radius: 5px 5px;
+	cursor: pointer;
+	background-color: rgba(53, 38, 80, 0.5);
+
+	
+}
