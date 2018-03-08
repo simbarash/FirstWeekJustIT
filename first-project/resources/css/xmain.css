@@ -1,127 +1,124 @@
-/* =================================
-THIS SHOPPING WEBSITE  IS FOR TRAINING ONLY
-=====================================
+/* ===============================
+
+THIS SHOPPING WEBSITE IS FOR TRAINING ONLY 
+
+=================================
 */
 
 
-/* ===================================
-WEBSITE COLOUR THEME
-======================================*/
+
+
+/*WEBSITE COLOUR THEME*/
+
 
 /*
 Main Colours:
+
 Primary colour - rgb(183, 154, 246); //purple for navigation links
 Secondary colour - rgb(53, 38, 80); //darker purple
 Third colour - rgb(200, 177, 250); //lighter purple
 */
 
-
-/* ==================================
-MOBILE DEFAULT LAYOUT - GLOBAL STYLES
-=====================================*/
+/*============================
+MOBILE DEFAULT LAYOUT -  GLOBAL STYLES
+=============================*/
 
 html {
-
-	-webkit-text-size-adjust:100%;
-	-moz-text-size-adjust:100%;
-
+	-webkit-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;	
 }
 
 
-
 * {
-
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;
 }
 
-
-
-/*universal style */
-
+/*universal style*/
 
 a {
 	text-decoration: none;
 }
 
-
 .container {
-
 	width: 80%;
 	height: 100%;
 	margin: 100px auto;
 }
 
-/* Embedded fonts */
+/*Embeded fonts*/
 
 @font-face {
-	font-family: '28_days';
-	src: url(../external/font/28_days_later_webfont.tff);
+	font-family: '28Days';
+	src: url(../external/fonts/28DaysLater.ttf);
 	font-weight: normal;
 	font-style: normal;
 }
 
-/*============================
-			 HOME STYLES
-===============================*/
+
+/* 
+=========== 
+HOME STYLES
+===========
+*/
+
 img, video {
+	
 	width: 100%;
 }
 
 body {
-
+	
 	font-family: serif;
 	font-size: 16px;
 	color: #444;
 	margin: 0;
 	padding: 0;
 	overflow-x: hidden;
+	
 }
-
 
 
 #home {
-
+	
 	position: relative;
 	background-image: url(../img/trainerHomePage.jpg);
-	background-repeat: no-repeat;
-	background-position: center 0;
-	background-size: cover;
-
-/*	height: auto;*/
+	
+/*	height: auto; */
 	width: 100%;
 	height: 100vh;
 	background-attachment: fixed;
-
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
 .logo {
-
+	
 	position: absolute;
 	top: 3px;
 	left: 10px;
 	width: 50px;
-
+	
 }
 
-
 .navC {
-
-	color: #ffffff;
-	height: auto;
-	width: 100%;
+	color: #fff;
+	width:  100%;
 	text-align: center;
 	background-color: #100b1a;
-
-
+	
 }
 
 .menu-items {
+	
 	display: inline;
 	list-style: none;
 	margin: 0;
 	padding: 0;
+	
 }
 
 nav li a {
@@ -132,40 +129,39 @@ nav li a {
 }
 
 .cartIcon {
-
-	position: absolute;
 	top: 15px;
+	position: absolute;
 	left: 50vw;
-	width: 50px;
+	width: 30px;
 	z-index: 10;
 }
 
-.fa-shopping-cart{
+.fa-shopping-cart {
 	color:  #352650;
 	font-size: 2em;
 }
 
+/* This is the code for the 3 line bar menu icon*/
 
-/* This is the code for the 3 line bar menu*/
-.navBtn{
-
+.navBtn {
 	font-size: 2.5em;
-	display:block;
+	display: block;
 	cursor: pointer;
 	padding: 7px 3%;
 	text-align: center;
 	margin: 0 4vw 0 75vw;
 	width: 20%;
+	
 }
 
-.actionB{
 
-	position: absolute;
+.actionB {
+	position:absolute;
 	top: 65vh;
 	left: 5vw;
 }
 
-.newCollectionB{
+.newCollectionB {
 	color: #fff;
 	border-radius: 5px 5px;
 	-webkit-border-radius: 5px 5px;
@@ -179,21 +175,16 @@ nav li a {
 	border: 1px solid #fff;
 }
 
-.headerC {
-
+.headerC{
 	position: fixed;
 	width: 100%;
-
 }
 
-.menu-items , fa-hand-o-right {
-
+.menu-items{
 	display: none;
 }
 
-
-.mainHeading {
-
+.mainHeading{
 	font-family: 'Lovers Quarrel', cursive, sans-serif;
 	letter-spacing: 3px;
 	font-weight: lighter;
@@ -204,39 +195,35 @@ nav li a {
 	margin: 60vh auto 0 auto;
 }
 
-
-.slogan {
-
-	font-family: '28_days';
+.slogan{
+	font-family: '28Days';
 	letter-spacing: 3px;
 	font-weight: lighter;
 	font-size: 2em;
 	text-align: right;
 	color: #fff;
 	padding: 200px 4vw 0 0;
-
-
 }
 
-/* ===========================================
-				 Product Section
-==============================================*/
+/*===============================
+				PRODUCT SECTION
+===============================*/
+
+
 
 h1 {
-
 	font-size: 1.5em;
 	font-family: 'Mukta', sans-serif;
 	text-align: center;
 	font-weight: lighter;
 }
 
-.productText {
-
+.productText{
 	text-align: center;
+	
 }
 
-.addToCart {
-
+.addToCart{
 	padding: 15px 20px;
 	display: block;
 	background-color: #352650;
@@ -247,7 +234,6 @@ h1 {
 }
 
 .addToCart a {
-
 	color: #fff;
 }
 
@@ -256,92 +242,21 @@ figure {
 	margin: 0;
 }
 
-.price{
-
+.price {
 	display: block;
-	text-align: center;
 }
 
 .productBox {
-
 	margin: 1%;
 	width: 230px;
 	padding: 0 25px;
-
-}
-.pDetail{
-	font-size: 1em;
-	margin: 0 auto;
-	padding: 0 25px;
-	text-align: center;
-	
-}
-
-/*==============================  
-MOBILE STYLES  -  568PX SCREEN RESOLUTION
-==============================*/
-
-@media screen and (min-width: 568) {
-	
-	.pDetail{
-		padding: 0;
-		height: 50px;
-		margin-bottom: 10px;
-		color: #008000;
-	}
-	
-	.slogan {
-		padding: 100px 4vw 0 0;
-		
-	}
 }
 
 
 
-/*==============================  
-TABLET STYLES  -  768PX SCREEN RESOLUTION
-==============================*/
-
-@media screen and (min-width: 768px) {
-	#home {
-		height: 80vh;
-	}
-	
-	.container {
-		width: 100%
-	}
+.aboutVid {
+	display: block;
 }
-
-
-/*=================
-CONTACT ECTION STYLES
-==================*/
-
-#contact {
-
-	position: relative;
-	background-repeat: no-repeat;
-	background-position: center 0;
-	background-size: cover;
-
-/*	height: auto;*/
-	width: 100%;
-	height: 100vh;
-	background-attachment: fixed;
-	
-
-}
-
-.addressText{
-	text-align: center;
-	color: #fff;
-	
-}
-
-.containerFilter{
-background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(../img/trainerContactBackground.jpg)
-}
-
 
 
 
